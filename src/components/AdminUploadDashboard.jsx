@@ -164,13 +164,13 @@ export default function AdminUploadDashboard({ onBackToPortal }) {
       else if (
         combinedSearchText.includes("karthik") || 
         combinedSearchText.includes("ponamala") ||
-        combinedSearchText.includes("2400040405") ||
+        combinedSearchText.includes("2200040256") ||
         combinedSearchText.includes("arms/0005") ||
         combinedSearchText.includes("arms0005") ||
         combinedSearchText.includes("koneru") ||
         combinedSearchText.includes("lakshmaiah")
       ) {
-        setRegistrationNumber("2400040405");
+        setRegistrationNumber("2200040256");
         setStudentName("Ponamala Karthik");
         setCourseName("SOFTWARE DEVELOPER");
         setIssueDate("2026-03-31"); // YYYY-MM-DD

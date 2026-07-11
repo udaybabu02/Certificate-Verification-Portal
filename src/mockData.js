@@ -116,7 +116,7 @@ export const mockCertificates = [
     "institution": "Amaramam Skill Hub"
   },
   {
-    "registrationNumber": "2400040405",
+    "registrationNumber": "2200040256",
     "studentName": "Ponamala Karthik",
     "course": "SOFTWARE DEVELOPER",
     "issueDate": "31-03-2026",
