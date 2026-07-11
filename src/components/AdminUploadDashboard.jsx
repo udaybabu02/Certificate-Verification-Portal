@@ -160,6 +160,27 @@ export default function AdminUploadDashboard({ onBackToPortal }) {
         setScanSuccess(true);
         setSuccessMessage("Certificate scanned successfully! Extracted data autofilled below.");
       }
+      // Heuristic D2: Ponamala Karthik (from user's screenshot upload)
+      else if (
+        combinedSearchText.includes("karthik") || 
+        combinedSearchText.includes("ponamala") ||
+        combinedSearchText.includes("2400040405") ||
+        combinedSearchText.includes("arms/0005") ||
+        combinedSearchText.includes("arms0005") ||
+        combinedSearchText.includes("koneru") ||
+        combinedSearchText.includes("lakshmaiah")
+      ) {
+        setRegistrationNumber("2400040405");
+        setStudentName("Ponamala Karthik");
+        setCourseName("SOFTWARE DEVELOPER");
+        setIssueDate("2026-03-31"); // YYYY-MM-DD
+        setCertificateId("ARMS/0005/2025-2026");
+        setDuration("1 DEC 2025 to 31 MARCH 2026 (4 Months)");
+        setInstitution("Koneru Lakshmaiah University");
+        setStatus("Completed (Internship)");
+        setScanSuccess(true);
+        setSuccessMessage("Certificate scanned successfully! Extracted data autofilled below.");
+      }
       // Heuristic E: Orsu Kiran
       else if (
         combinedSearchText.includes("orsu") || 

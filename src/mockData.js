@@ -114,5 +114,17 @@ export const mockCertificates = [
     "duration": "24 Weeks",
     "credentialId": "ASH-REG-2026-002B",
     "institution": "Amaramam Skill Hub"
+  },
+  {
+    "registrationNumber": "2400040405",
+    "studentName": "Ponamala Karthik",
+    "course": "SOFTWARE DEVELOPER",
+    "issueDate": "31-03-2026",
+    "grade": "Completed (Internship)",
+    "duration": "1 DEC 2025 to 31 MARCH 2026 (4 Months)",
+    "credentialId": "ARMS/0005/2025-2026",
+    "institution": "Koneru Lakshmaiah University",
+    "avatarUrl": "/student_headshot_male.jpg",
+    "certificateImage": ""
   }
 ];
