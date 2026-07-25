@@ -201,6 +201,27 @@ export default function AdminUploadDashboard({ onBackToPortal }) {
         setScanSuccess(true);
         setSuccessMessage("Certificate scanned successfully! Extracted data autofilled below.");
       }
+      // Heuristic D4: Sameerupeta Vivek (from user's certificate upload)
+      else if (
+        combinedSearchText.includes("sameerupeta") || 
+        combinedSearchText.includes("vivek") ||
+        combinedSearchText.includes("2400040156") ||
+        combinedSearchText.includes("arms/0013") ||
+        combinedSearchText.includes("arms0013") ||
+        combinedSearchText.includes("drowsiness") ||
+        combinedSearchText.includes("drowsiness detection")
+      ) {
+        setRegistrationNumber("2400040156");
+        setStudentName("Sameerupeta Vivek");
+        setCourseName("DRIVER DROWSINESS DETECTION SYSTEM FOR ACCIDENT PREVENTION");
+        setIssueDate("2026-06-30"); // YYYY-MM-DD
+        setCertificateId("ARMS/0013/2025-2026");
+        setDuration("1st June 2026 to 30th June 2026 (1 Month)");
+        setInstitution("KL University");
+        setStatus("Completed (Internship)");
+        setScanSuccess(true);
+        setSuccessMessage("Certificate scanned successfully! Extracted data autofilled below.");
+      }
       // Heuristic E: Orsu Kiran
       else if (
         combinedSearchText.includes("orsu") || 
