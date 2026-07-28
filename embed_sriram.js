@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const mockDataPath = 'src/mockData.js';
-const imagePath = 'C:\\Users\\DELL\\.gemini\\antigravity\\brain\\34b6b9e0-c820-452d-a620-a44ed4cbf2a7\\media__1785006573010.jpg';
+const imagePath = 'C:\\Users\\DELL\\.gemini\\antigravity\\brain\\34b6b9e0-c820-452d-a620-a44ed4cbf2a7\\media__1785260081776.jpg';
 
 if (!fs.existsSync(mockDataPath)) {
   console.error('mockData.js not found!');
@@ -10,7 +10,7 @@ if (!fs.existsSync(mockDataPath)) {
 }
 
 if (!fs.existsSync(imagePath)) {
-  console.error('Sameerupeta Vivek certificate image not found at:', imagePath);
+  console.error('Sriram Ponnusamy certificate image not found at:', imagePath);
   process.exit(1);
 }
 
@@ -28,24 +28,24 @@ const jsonText = content.substring(jsonStart, jsonEnd);
 
 let mockCertificates = JSON.parse(jsonText);
 
-// Add Sameerupeta Vivek record
-const vivekRecord = {
-  registrationNumber: "2400040156",
-  studentName: "Sameerupeta Vivek",
-  course: "DRIVER DROWSINESS DETECTION SYSTEM FOR ACCIDENT PREVENTION",
-  issueDate: "30-06-2026",
+// Add Sriram Ponnusamy record
+const sriramRecord = {
+  registrationNumber: "2400040093",
+  studentName: "SRIRAM PONNUSAMY",
+  course: "AI-BASED FACE RECOGNITION ATTENDANCE SYSTEM USING RASPBERRY PI",
+  issueDate: "25-06-2026",
   grade: "Completed (Internship)",
-  duration: "1st June 2026 to 30th June 2026 (1 Month)",
-  credentialId: "ARMS/0013/2025-2026",
+  duration: "20th May 2026 to 25th June 2026 (5 Weeks)",
+  credentialId: "ARMS/0014/2025-2026",
   institution: "KL University",
   avatarUrl: "/student_headshot_male.jpg",
   certificateImage: base64Image
 };
 
-mockCertificates.push(vivekRecord);
+mockCertificates.push(sriramRecord);
 
 // Write back to mockData.js
 const updatedContent = `export const mockCertificates = ${JSON.stringify(mockCertificates, null, 2)};`;
 fs.writeFileSync(mockDataPath, updatedContent, 'utf-8');
 
-console.log('Successfully embedded Sameerupeta Vivek certificate image and updated mockData.js!');
+console.log('Successfully embedded Sriram Ponnusamy certificate image and updated mockData.js!');
